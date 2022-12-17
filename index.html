@@ -1,16 +1,56 @@
 <!doctype html>
+<meta charset="utf-8">
+<meta name="robots" content="nofollow">
 <html>
-    <header>
-        <title>Home Page</title>
-        <body background="img/bg.png">
-            <h1 align=center>
-                Kyamily / きゃみりー
-            </h1>
-            <a href="https://twitter.com/kyml_r">
-                <div style="text-align: center;"><div style="text-align: center;">
-                    <img src="img\twitter.png" alt="次へ">
-                </div>
-            </a>
-        </body>
-    </header>
+<header>
+<title>Home Page</title>
+<body>
+<div class="about">
+<img class="icon" src="image/icon.png" alt="icon">
+<h1 class="test">あいうえお</h1>
+</div>
+</body>
+<style>
+body {
+    background: #3f4bb8 url("image/background.png") center center no-repeat fixed;
+    background-size: cover;
+    z-index: 0;
+    overflow: hidden;
+}
+body:before {
+  content: '';
+  background: inherit;
+  filter: blur(7px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+.about {
+    background: #00000040 center center no-repeat fixed;
+    background-size: cover;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 100px;
+}
+.icon {
+    width: 20%;
+    height: 20%;
+    min-width :100px;
+    min-height :100px;
+    text-align: center;
+    border: solid 2px #000000;
+    border-radius: 47%;
+    box-shadow: 0 10px 20px #000000B3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.test {
+    text-align: center;
+}
+</style>
+</header>
 </html>
